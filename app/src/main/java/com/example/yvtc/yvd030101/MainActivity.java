@@ -30,4 +30,15 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(str);
 
     }
+    public void click3(View v)
+    {
+        EditText ed1, ed2;
+        int a, b;
+        ed1 = (EditText) findViewById(R.id.editText2);
+        ed2 = (EditText) findViewById(R.id.editText3);
+        a = Integer.valueOf(ed1.getText().toString());
+        b = Integer.valueOf(ed2.getText().toString());
+        TextView tv = (TextView) findViewById(R.id.textView4);
+        tv.setText(String.valueOf(a+b));
+    }
 }
